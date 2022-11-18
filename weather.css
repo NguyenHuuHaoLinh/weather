@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(94, 87, 87);
+}
+.container {
+  color: white;
+  background: linear-gradient(145deg, #2193b0, #6dd5ed);
+  width: 350px;
+  margin: 50px auto;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.4s;
+}
+.hot {
+  background: url(picture/R.jpg) no-repeat center/cover;
+}
+.hot .container {
+  background: url(picture/R.jpg) no-repeat center/cover;
+  color: rgb(253, 253, 253);
+}
+.cool {
+  background: url("picture/OIP\ \(1\).jpg") no-repeat center/cover;
+}
+.cool .container {
+  background: url("picture/OIP\ \(1\).jpg") no-repeat center/cover;
+  color: rgb(131, 224, 24);
+}
+.cold {
+  background: url("picture/OIP.jpg") no-repeat center/cover;
+}
+.cold .container {
+  background: url("picture/OIP.jpg") no-repeat center/cover;
+  color: black;
+}
+.warm {
+  background: url(./picture/warmjpg-be7d1989d55f453f.jpg) no-repeat center/cover;
+}
+.warm .container {
+  background: url(./picture/warmjpg-be7d1989d55f453f.jpg) no-repeat center/cover;
+  color: rgb(172, 223, 230);
+}
+.main-section {
+  text-align: center;
+  transition: 0.4s;
+}
+.search-bar {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.search-box {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+  padding: 3px 3px 3px 20px;
+  background: transparent;
+  height: 20px;
+  color: white;
+}
+.search-icon {
+  position: absolute;
+  left: 0;
+}
+.search-box::placeholder {
+  color: rgb(206, 223, 235);
+}
+.city-name {
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+.temperature {
+  font-size: 80px;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+}
+.temperature::after {
+  position: absolute;
+  content: "O";
+  font-size: 25px;
+}
+.additional-section {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid white;
+  padding-top: 20px;
+  transition: 0.4s;
+}
+.infor1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+.infor2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+.item3 {
+  padding-left: 10px;
+}
+.item4 {
+  padding: 0px 0px 0px 40px;
+}
+.time {
+  padding: 20px 0px;
+}
+.hide {
+  visibility: hidden;
+}
+.weather-state {
+  font-size: 20px;
+}
